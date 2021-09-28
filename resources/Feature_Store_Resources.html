@@ -1,0 +1,477 @@
+<html>
+
+<style type="text/css">
+body {font-family:Trebuchet MS ; }
+</style>
+
+<head>
+  <title>Feature Store Resources</title>
+</head>
+<body>
+
+<h1>Feature Store Resources</h1>
+
+<!-- ****** -->
+<h2>Overview</h2>Main implementations:
+<ul>
+<li>Amazon SageMaker Feature Store - announced in Nov. 2020. </li>
+<li>Google Clound Vertex AI Feature Store.</li>
+<li>Tecton - Three founders from Uber <a href="https://eng.uber.com/michelangelo-machine-learning-platform/">Michelangelo</a>  - $60m total - series C.</li>
+<li>Logical Clocks - Hopworks - eu1.3m ($1.6m) - seed.</li>
+<li>Feast - open source project initiated by Google Cloud and Gojek. Key Gojek Feast developer joins Tecton on 2020-11-17.</li>
+<li>Databricks Feature Store.</li>
+<li>Molecula - $23.6Mm total - Series A.</li>
+<li>Zipline - Airbnb’s feature store - not (yet) open-sourced.</li>
+<li>Splice ML Manager - little documentation on its feature store feature. Company has folded as of 2021-08.</li>
+</ul>
+
+<!-- ****** -->
+<h2>SageMaker Feature Store</h2><strong>Basic</strong>
+<ul>
+<li><a href="https://aws.amazon.com/sagemaker/feature-store/">Amazon SageMaker Feature Store</a> </li></ul>
+<strong>AWS Documentation</strong>
+<ul>
+<li><a href="https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html">Create, Store, and Share Features with Amazon SageMaker Feature Store</a>
+<ul>
+<li><a href="https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html">Share Features with Amazon SageMaker Feature Store</a></li>
+<li><a href="https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-getting-started.html">Get started with Amazon SageMaker Feature Store</a></li>
+<li><a href="https://sagemaker.readthedocs.io/en/stable/amazon_sagemaker_featurestore.html">Amazon SageMaker Feature Store</a> - sagemaker.readthedocs</li>
+</ul></li>
+</ul><strong>Blog</strong>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/scale-ml-feature-ingestion-using-amazon-sagemaker-feature-store/">Scale ML feature ingestion using Amazon SageMaker Feature Store</a> - 2021-09-20</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/use-amazon-sagemaker-feature-store-in-a-java-environment/">Use Amazon SageMaker Feature Store in a Java environment</a> - 2021-07-20</li>
+<li><a href="https://aws.amazon.com/blogs/aws/new-store-discover-and-share-machine-learning-features-with-amazon-sagemaker-feature-store/">New – Store, Discover, and Share Machine Learning Features with Amazon SageMaker Feature Store</a> - 2020-12-08</li>
+</ul><strong>News</strong>
+<ul>
+<li><a href="https://press.aboutamazon.com/news-releases/news-release-details/aws-announces-nine-new-amazon-sagemaker-capabilities">AWS Announces Nine New Amazon SageMaker Capabilities</a> - PR - 2020-12-08</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2020/12/introducing-amazon-sagemaker-feature-store/">Introducing Amazon SageMaker Feature Store</a> - AWS - 2020-12-08</li>
+<li><a href="https://www.infoq.com/news/2020/12/amazon-sagemaker-feature-store/">AWS Announces Amazon SageMaker Feature Store</a> - InfoQ - 2012-12-17</li>
+<li><a href="https://techcrunch.com/2020/12/08/aws-expands-on-sagemaker-capabilities-with-end-to-end-features-for-machine-learning/">AWS expands on SageMaker capabilities with end-to-end features for machine learning</a> - teccrunch - 2012-12-08</li>
+</ul><strong>Articles</strong>
+<ul>
+<li><a href="https://awsfeed.com/whats-new/machine-learning/using-streaming-ingestion-with-amazon-sagemaker-feature-store-to-make-ml-backed-decisions-in-near-real-time">Using streaming ingestion with Amazon SageMaker Feature Store to make ML-backed decisions in near-real time</a> - awsfeed - 2020-12-10</li>
+</ul>
+
+<!-- ****** -->
+<h2>Google Cloud</h2>
+<ul>
+<li><a href="https://cloud.google.com/vertex-ai/docs/featurestore" data-card-appearance="inline">https://cloud.google.com/vertex-ai/docs/featurestore</a> </li>
+<li><a href="https://cloud.google.com/vertex-ai/docs/featurestore/overview" data-card-appearance="inline">https://cloud.google.com/vertex-ai/docs/featurestore/overview</a> </li>
+<li><a href="https://cloud.google.com/vertex-ai/docs/featurestore/concepts" data-card-appearance="inline">https://cloud.google.com/vertex-ai/docs/featurestore/concepts</a> </li>
+<li>Feature Serving: <a href="https://cloud.google.com/vertex-ai/docs/featurestore/serving-batch">Batch Serving</a> - <a href="https://cloud.google.com/vertex-ai/docs/featurestore/serving-online">Online serving</a> </li>
+<li><a href="https://cloud.google.com/vertex-ai/quotas#featurestore" data-card-appearance="inline">https://cloud.google.com/vertex-ai/quotas#featurestore</a> </li>
+</ul>
+
+<!-- ****** -->
+<h2>Tecton</h2><strong>Basic</strong>
+<ul>
+<li><a href="https://www.tecton.ai/">www.tecton.ai</a> - Enterprise Feature Store for Machine Learning</li>
+<li><a href="https://www.tecton.ai/feature-store/">What is a feature store?</a></li>
+<li><a href="https://www.tecton.ai/product/">The Tecton Feature Store</a></li>
+<li><a href="https://www.tecton.ai/resources/">Resources</a>
+<ul>
+<li><a href="https://www.tecton.ai/resources/basic-vs-enterprise-feature-stores/">Basic vs. Enterprise Feature Stores</a> - white papers</li>
+</ul></li>
+<li><a href="https://github.com/tecton-ai">https://github.com/tecton-ai</a> - not much here</li>
+</ul><strong>About</strong>
+<ul>
+<li>Founders: 3 engineers from Uber’s <a href="https://eng.uber.com/michelangelo-machine-learning-platform/">Michelangelo</a> ML platform
+<ul>
+<li>CEO <a href="https://www.linkedin.com/in/michaeldelbalso">Mike Del Balso</a>, CTO <a href="https://www.linkedin.com/in/kevinstumpf">Kevin Stumpf</a> and VP of Engineering <a href="https://www.linkedin.com/in/jeremyhermann">Jeremy Hermann</a></li>
+</ul></li>
+<li><a href="https://sg.linkedin.com/in/willempienaar">Willem Pienaar</a> - Engineering lead - Singapore - <a href="https://twitter.com/willpienaar?lang=en">Twitter</a> - Feast lead joined Tecton in Nov. 2020</li>
+</ul><strong>Funding</strong>
+<ul>
+<li><a href="https://www.crunchbase.com/organization/tecton">Crunchbase - Tecton</a> - total $60M 
+<ul>
+<li>$35m - Series B - 2020-12-07</li>
+<li>$20m - Series A - 2020-04-28</li>
+<li>$05m - Seed - 2018-12-04</li>
+</ul></li>
+<li><a href="https://techcrunch.com/2020/12/07/tecton-ai-nabs-35m-series-b-as-it-releases-machine-learning-feature-store/">Tecton.ai nabs $35M Series B as it releases machine learning feature store</a> - techcrunch - 2020-12-07</li>
+<li><a href="https://techcrunch.com/2020/04/28/tecton-ai-emerges-from-stealth-with-20m-series-a-to-build-operational-machine-learning-platform/">Tecton.ai emerges from stealth with $20M Series A to build machine learning platform</a> - techcrunch - 2020-12-07</li>
+<li><a href="https://www.forbes.com/sites/tomtaulli/2020/05/02/tectonai-snags-20-million-to-solve-ais-data-problem">Tecton.ai Snags $20 Million To Solve AI’s Data Problem</a> - forbes - 2020-05-02</li>
+</ul><strong>Blog</strong>
+<ul>
+<li><a href="https://www.tecton.ai/blog/">https://www.tecton.ai/blog</a></li>
+<li><a href="https://www.tecton.ai/blog/introducing-low-latency-streaming-pipelines-for-real-time-ml/" data-card-appearance="inline">https://www.tecton.ai/blog/introducing-low-latency-streaming-pipelines-for-real-time-ml/</a> - 2021-08-09</li>
+<li><a href="https://www.tecton.ai/blog/amazon-sagemaker-and-tecton">Amazon SageMaker and Tecton: How to Choose the Right Feature Store on AWS</a> - 2020-12-10</li>
+<li><a href="https://www.tecton.ai/blog/feast-announcement/">Why Tecton is Backing the Feast Open Source Feature Store</a> - 2020-11-16 - <img class="emoticon emoticon-thumbs-up" data-emoticon-name="thumbs-up" border="0" src="/wiki/s/1424090559/6452/1d42060145dca756337b5e84769d7b9c1e7d67d5/_/images/icons/emoticons/thumbs_up.png" width="16" height="16" data-mce-src="/wiki/s/1424090559/6452/1d42060145dca756337b5e84769d7b9c1e7d67d5/_/images/icons/emoticons/thumbs_up.png" alt="(thumbs up)" title="(thumbs up)" /> </li>
+<li><a href="https://www.tecton.ai/blog/what-is-a-feature-store/">What is a Feature Store?</a> - 2020-10-20</li>
+</ul><strong>Articles</strong>
+<ul>
+<li><a href="https://softwareengineeringdaily.com/2020/06/03/tecton-machine-learning-platform-from-uber-with-kevin-stumpf/">Tecton: Machine Learning Platform from Uber with Kevin Stumpf</a> - softwareengineeringdaily - <a href="https://softwareengineeringdaily.com/wp-content/uploads/2020/06/SED1082-Tecton.pdf">transcript</a> - 2020-06-03</li>
+</ul><strong>Presentations</strong>
+<ul>
+<li>Accelerating the ML Lifecycle with an Enterprise-Grade Feature Store - Atlassian - <a href="https://databricks.com/session_na20/accelerating-the-ml-lifecycle-with-an-enterprise-grade-feature-store">video</a> - <a href="https://www.slideshare.net/databricks/accelerating-the-ml-lifecycle-with-an-enterprisegrade-feature-store">slides</a> - DAIS 2020</li>
+</ul>
+
+<!-- ****** -->
+<h2>Logical Clocks - Hopsworks</h2><strong>Basic</strong>
+<ul>
+<li><a href="https://www.logicalclocks.com/">https://www.logicalclocks.com</a></li>
+<li><a href="https://www.logicalclocks.com/hopsworks-featurestore">Feature Store</a></li>
+<li><a href="https://www.logicalclocks.com/webinars">Webinars</a></li>
+<li><a href="https://github.com/logicalclocks">https://github.com/logicalclocks</a> - local install: Vagrant</li>
+</ul><strong>Hopsworks</strong>
+<ul>
+<li><a href="https://www.hopsworks.ai/">https://www.hopsworks.ai</a></li>
+<li><a href="https://hopsworks.readthedocs.io/en/1.1/featurestore/featurestore.html">Feature Store</a> - very long page - doc</li>
+<li>Articles
+<ul>
+<li><a href="https://medium.com/data-for-ai/hopsworks-feature-store-2-0-7169420adc7d">Hopsworks Feature Store 2.0</a> - data-for-ai - 2020-11-21</li>
+</ul></li>
+</ul><strong>About</strong>
+<ul>
+<li><a href="https://www.logicalclocks.com/about-logical-clocks">About Logical Clocks</a></li>
+<li>Founded in 2016 by members of the Distributed Computing Group at KTH of Sweden</li>
+<li><a href="https://se.linkedin.com/in/jim-dowling-206a98">Jim Dowling</a> is CEO of Logical Clocks</li>
+</ul><strong>Funding</strong>
+<ul>
+<li><a href="https://www.crunchbase.com/organization/logical-clocks">Crunchbase - Logical Clocks</a> - euro 1.3M ($1.6m) - seed round - 2018-11-20</li>
+<li>Note: this implies they are profitable enough to support a staff of 25.</li>
+</ul><strong>Blog</strong>
+<ul>
+<li><a href="https://www.logicalclocks.com/blog">https://www.logicalclocks.com/blog</a></li>
+<li><a href="https://www.logicalclocks.com/blog/mlops-wars-versioned-feature-data-with-a-lakehouse">MLOps Versioned Feature Data with a Lakehouse</a> - 2021-08-03</li>
+<li><a href="https://www.logicalclocks.com/blog/scalable-metadata-the-new-breed-of-file-systems-empowering-big-data-companies">Scalable metadata with HopsFS </a> - 2021-05-31</li>
+<li><a href="https://www.logicalclocks.com/blog/hopsworks-feature-store-for-aws-sagemaker">Hopsworks Feature Store for AWS SageMaker</a> - 2020-05-18</li>
+<li><a href="https://www.logicalclocks.com/blog/hopsworks-feature-store-for-databricks">Hopsworks Feature Store for Databricks</a> - 2020-04-23</li>
+<li><a href="https://www.logicalclocks.com/blog/feature-store-the-missing-data-layer-in-ml-pipelines">Try Hopsworks Feature Store: The Missing Data Layer in ML Pipelines</a> - 2018-12-30</li>
+</ul><strong>Ron DB</strong>
+<ul>
+<li>TLDR
+<ul>
+<li>RonDB is a stable distribution of MySQL NDB Cluster, a key-value store with SQL capabilities. </li>
+<li>RonDB is brought to you by the RonDB team at Logical Clocks AB and the development team at iClaustron AB.</li>
+</ul></li>
+<li>Blog
+<ul>
+<li><a href="https://www.logicalclocks.com/blog/comparing-rondb-on-aws-azure-and-gcp-using-sysbench">RonDB on AWS, Azure and GCP using Sysbench</a> - 2021-09-03</li>
+<li><a href="https://www.logicalclocks.com/blog/ai-ml-needs-a-key-value-store-and-redis-is-not-up-to-it">RonDB: key-value store faster than Redis</a> - 2021-02-26</li>
+<li><a href="https://www.logicalclocks.com/blog/new-rondb-release-21-10-1">New RonDB Beta Release 21.10.1</a> - 2021-07-29</li>
+</ul></li>
+<li><a href="https://github.com/logicalclocks/rondb">https://github.com/logicalclocks/rondb</a> </li>
+<li>Mikael Ronström - Developer of AXE VM, NDB Cluster, MySQL Cluster, MySQL InnoDB, Scaling MySQL Server, MySQL Partitioning, MySQL Threadpool and now RonDB
+<ul>
+<li><a href="https://github.com/mronstro">https://github.com/mronstro</a> </li>
+<li><a href="http://mikaelronstrom.blogspot.com/" data-card-appearance="inline">http://mikaelronstrom.blogspot.com/</a>blog
+<ul>
+<li><a href="http://mikaelronstrom.blogspot.com/2021/09/automatic-memory-management-in-rondb.html" data-card-appearance="inline">http://mikaelronstrom.blogspot.com/2021/09/automatic-memory-management-in-rondb.html</a> - 2021-09-23</li>
+<li><a href="http://mikaelronstrom.blogspot.com/2021/08/rondb-and-docker-compose.html" data-card-appearance="inline">http://mikaelronstrom.blogspot.com/2021/08/rondb-and-docker-compose.html</a> - 2021-08-12</li>
+</ul></li>
+</ul></li>
+</ul><strong>Articles and resources</strong>
+<ul>
+<li><a href=" https://www.usenix.org/system/files/opml20_full_proceedings.pdf">Time Travel and Provenance for Machine Learning Pipelines</a> - p. 13 in PDF- Logical Clocks article - from <a href="https://www.usenix.org/conference/opml20">OpML '20</a> conference - 2020-07-28 - <img class="emoticon emoticon-thumbs-up" data-emoticon-name="thumbs-up" border="0" src="/wiki/s/1424090559/6452/1d42060145dca756337b5e84769d7b9c1e7d67d5/_/images/icons/emoticons/thumbs_up.png" width="16" height="16" data-mce-src="/wiki/s/1424090559/6452/1d42060145dca756337b5e84769d7b9c1e7d67d5/_/images/icons/emoticons/thumbs_up.png" alt="(thumbs up)" title="(thumbs up)" /> </li>
+<li><a href="https://www.globenewswire.com/news-release/2019/01/21/1703038/0/en/Introducing-the-Feature-Store-the-Data-Warehouse-for-Machine-Learning.html">Introducing the Feature Store - the Data Warehouse for Machine Learning</a> - globalnewswite - 2019-01-21</li>
+<li><a href="https://databricks.com/session_na21/kfserving-model-monitoring-with-apache-spark-and-a-feature-store">KFServing, Model Monitoring with Apache Spark and a Feature Store</a> - Dowling - DAIS 2021</li>
+</ul><strong>Hopsworks and Databricks</strong>
+<ul>
+<li><a href="https://databricks.com/session_na20/building-a-feature-store-around-dataframes-and-apache-spark">Building a Feature Store around Dataframes and Apache Spark</a> - <a href="https://www.slideshare.net/databricks/building-a-feature-store-around-dataframes-and-apache-spark">slides</a> - Dowling - Spark Summit 2020</li>
+<li><a href="https://www.logicalclocks.com/hopsworks-for-databricks">Hopsworks for Databricks</a> - <a href="https://github.com/logicalclocks/hops-examples/tree/master/notebooks/featurestore/databricks">github Jupyter notebook examples</a></li>
+<li><a href="https://drive.google.com/file/d/1XwTkeqM5xl3fW7mZjsbgznnj-V5z92kr/view">Zoom Hopsworks Feature Store - Databricks</a> - Jim Dowling  - mp4 - 1:00:29 - 2020-08-17 - <a href="https://databricks.slack.com/archives/CCBR0732L/p1600202507226700">slack thread</a> - internal </li>
+</ul><strong>Notes</strong>
+<ul>
+<li>Runs on AWS, Azure, GCP and on-prem.</li>
+<li>Integrates with SageMaker, Databricks, Kubernetes and Cloudera.</li>
+<li>Have offline and online feature stores.</li>
+<li>Offline is powered by Hive and Hudi.</li>
+<li>In conversations with Databricks and Matei.</li>
+<li>Interested in Delta, but waiting for OSS Delta to become more like Databricks Delta (e.g. z-order).</li>
+<li>Have only 25 people, question of priorities.</li>
+<li>Hoping by the end of year - source Sep. 2020 - (2020?).</li>
+<li>Don’t use MLflow since have their own experiment tracking system - with projects.</li>
+</ul>
+
+<!-- ****** -->
+<h2>Molecula</h2><strong>Basic</strong>
+<ul>
+<li><a href="https://www.molecula.com/">Molecula home</a>
+<ul>
+<li><a href="https://www.molecula.com/products/">Products - Feature Store</a></li>
+</ul></li>
+<li>Founders
+<ul>
+<li><a href="https://www.molecula.com/about/#leadership">Leadership</a></li>
+<li><a href="https://www.molecula.com/team-members/higinio-ho-maycotte/">Higinio Maycotte</a> - CEO - <a href="https://www.linkedin.com/in/maycotte/"><u>LinkedIn</u></a> and <a href="https://twitter.com/maycotte"><u>Twitter</u></a>
+<ul>
+<li>great-grandson of the Mexican General who shot off Pancho Villa’s leg</li>
+</ul></li>
+<li><a href="https://www.molecula.com/team-members/travis-turner/">Travis Turner</a> - Chief Architect - <a href="https://www.linkedin.com/in/travislamondturner/"><u>LinkedIn</u></a> - <a href="https://twitter.com/travislturner?lang=en"><u>Twitter</u></a>   </li>
+</ul></li>
+<li><a href="https://www.crunchbase.com/organization/molecula">Molecula - Crunchbase</a> - <a href="https://www.linkedin.com/company/molecula">Molecula - LinkedIn</a></li>
+<li><a href="https://github.com/molecula">https://github.com/molecula</a></li>
+<li><a href="https://www.pilosa.com">Pilosa</a> - <a href="https://www.pilosa.com/docs/latest/faq/">FAQ</a> 
+<ul>
+<li><a href="https://www.bizjournals.com/austin/inno/stories/profiles/2017/05/02/the-founder-of-umbel-launched-pilosa-to-crunch-big.html">The Founder of Umbel Launched Pilosa to Crunch Big Data Faster</a>- 2017-05-02</li>
+</ul></li>
+</ul><strong>Funding</strong>
+<ul>
+<li><a href="https://www.crunchbase.com/organization/molecula">Crunchbase - Molecula</a> - total $23.6M 
+<ul>
+<li>$17.6m - Series A - 2021-01-13</li>
+<li>$6m - Seed - 2021-08-22 - The Seraph Group, Lontra Ventures, Velar Capital, Capital Factory, Andrew Busey and Jason Dorsey</li>
+</ul></li>
+<li>Articles
+<ul>
+<li><a href="https://venturebeat.com/2021/01/13/molecula-raises-17-6-million-for-its-ai-feature-store-technology/">Molecula raises $17.6 million for its AI feature store technology</a> - venturebeat - 2021-01-13</li>
+<li><a href="https://www.builtinaustin.com/2021/01/13/molecula-raises-17m-hiring">Molecula Raises $17.6M to Democratize Large-Scale Analytics, Plans Hiring Push</a> - builtinaustin - 2021-01-13</li>
+<li><a href="https://www.bizjournals.com/austin/inno/stories/fundings/2021/01/13/molecula-closes-176m-series-a-funding-round.html">Hiring surge, new product on tap after Molecula snags $17.6M in funding</a> - bizjournals - 2021-01-13</li>
+<li><a href="https://www.globenewswire.com/news-release/2021/01/13/2157875/0/en/Molecula-Secures-17-6-Million-in-Series-A-Funding-to-Democratize-Machine-Scale-Analytics-and-AI.html">Molecula Secures $17.6 Million in Series A Funding to Democratize Machine-Scale Analytics and A</a> - globenews - 2021-01-13</li>
+<li><a href="https://www.bizjournals.com/austin/inno/stories/fundings/2019/08/22/austin-data-virtualization-startup-molecula-closes.html">Austin Data Virtualization Startup Molecula Closes $6M Seed Round</a>  - bizjournals - 2021-08-22</li>
+</ul></li>
+</ul><strong>Product</strong>
+<ul>
+<li><a href="https://www.molecula.com/products/">https://www.molecula.com/products</a>
+<ul>
+<li>Molecula Enterprise Feature Store - Molecula provides centralized access to all your big data by reducing the dimensionality of the original source data , into a highly-optimized format that is natively predisposed for real-time machine-scale analytics and AI</li>
+</ul></li>
+<li><a href="https://www.molecula.com/wp-content/uploads/2020/02/Molecula-A-New-Paradigm-to-Data-Access-Datasheet.pdf">A New Paradigm to Data Access</a> - Datasheet</li>
+</ul><strong>Articles</strong>
+<ul>
+<li><a href="https://www.globenewswire.com/news-release/2020/12/21/2148916/0/en/Molecula-Named-in-Gartner-Market-Guide-for-Analytics-Query-Accelerators.html">Molecula Named in Gartner Market Guide for Analytics Query Accelerators</a> - globenews - 2020-12-21</li>
+</ul>
+
+<!-- ****** -->
+<h2>Rasgo</h2><strong>Basic</strong>
+<ul>
+<li><a href="https://www.rasgoml.com">https://www.rasgoml.com</a>
+<ul>
+<li>“Rasgo empowers Data Scientists to accelerate the critical, yet mundane, pre-model preparation steps they hate by delivering efficiencies across data extraction and exploration, data preparation, and feature engineering portions of the lifecycle”</li>
+</ul></li>
+<li><a href="https://www.linkedin.com/company/rasgo-intelligence">https://www.linkedin.com/company/rasgo-intelligence</a></li>
+<li><a href="https://github.com/rasgointelligence">https://github.com/rasgointelligence</a> 
+<ul>
+<li><a href="https://github.com/rasgointelligence/PyRasgo">https://github.com/rasgointelligence/PyRasgo</a> </li>
+<li><a href="https://github.com/rasgointelligence/feature-engineering-tutorials">https://github.com/rasgointelligence/feature-engineering-tutorials</a> </li>
+</ul></li>
+<li><a href="https://www.rasgoml.com/post/rasgo-native-integration-with-snowpark" data-card-appearance="inline">https://www.rasgoml.com/post/rasgo-native-integration-with-snowpark</a> </li>
+</ul><strong>Founders</strong>
+<ul>
+<li>Jared Parker - CEO - director of sales at Domino Data Lab - <a href="https://www.linkedin.com/in/parkerjared">LinkedIn</a></li>
+<li> Patrick Dougherty - CTO - <a href="https://www.linkedin.com/in/cpatrickdougherty">LinkedIn</a></li>
+</ul><strong>Funding</strong>
+<ul>
+<li><a href="https://www.crunchbase.com/organization/rasgo-5e6c/company_financials">Crunchbase - Rasgo</a> - total $20mM 
+<ul>
+<li>$20m - Series A - 2021-06-24 - Insight Partners and Unusual Ventures.</li>
+<li>$5.1M - Seed - 2020-07 - Unusual Ventures</li>
+</ul></li>
+<li>Articles
+<ul>
+<li><a href="https://venturebeat.com/2021/06/24/feature-store-platform-rasgo-raises-20m/" data-card-appearance="inline">https://venturebeat.com/2021/06/24/feature-store-platform-rasgo-raises-20m/</a> - 2021-06-24
+<ul>
+<li>Rasgo has five customers</li>
+</ul></li>
+<li><a href="https://www.alleywatch.com/2021/06/rasgo-intelligence-data-science-management-platform-feature-store-machine-learning-ops-jared-parker/" data-card-appearance="inline">https://www.alleywatch.com/2021/06/rasgo-intelligence-data-science-management-platform-feature-store-machine-learning-ops-jared-parker/</a> - 2021-06-24
+<ul>
+<li>Rasgo is different in that it is the only feature store on the market that is fully SaaS-based and natively integrates with leading cloud data warehouses.</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<!-- ****** -->
+<h2>Kaskada</h2><strong>Basic</strong>
+<ul>
+<li><a href="https://kaskada.com/">https://kaskada.com</a></li>
+<li><a href="https://twitter.com/kaskadainc" data-card-appearance="inline">https://twitter.com/kaskadainc</a> </li>
+</ul><strong>Articles</strong>
+<ul>
+<li><a href="https://insidebigdata.com/2020/03/19/ai-under-the-hood-kaskada-inc/">AI Under the Hood: Kaskada, Inc.</a> - insidebigdata - 2020-03-19</li>
+<li><a href="https://venturebeat.com/2020/02/04/kaskada-raises-8-million-to-facilitate-ai-feature-engineering/">Kaskada raises $8 million to facilitate AI feature engineering</a> - 2020-02-04</li>
+<li><a href="https://www.geekwire.com/2020/ex-google-cloud-engineers-raise-8m-seattle-machine-learning-startup-kaskada/">Ex-Google Cloud engineers raise $8M for Seattle machine learning startup Kaskada</a> - geekwire - 2020-02-04</li>
+<li><a href="https://www.geekwire.com/2019/google-cloud-vets-launch-seattle-startup-kaskada-bolster-machine-learning-tech-real-time-data/">Google Cloud vets launch Seattle startup Kaskada to bolster machine learning tech with real-time data</a> - geekwire - 2019-08-02</li>
+</ul><strong>Funding</strong>
+<ul>
+<li><a href="https://www.crunchbase.com/organization/kaskada">Crunchbase - Kaskada</a> - total $9.8M 
+<ul>
+<li>$1.8m - Seed</li>
+<li>$8m - Series A</li>
+</ul></li>
+</ul>
+
+<!-- ****** -->
+<h2>Pinecone</h2>
+<ul>
+<li><a href="https://www.pinecone.io/">https://www.pinecone.io</a>
+<ul>
+<li>Vector database for machine learning</li>
+<li>We are engineers who built large machine learning platforms, databases, and search engines at AWS (SageMaker), Facebook, Yahoo, and Google</li>
+</ul></li>
+<li>Team
+<ul>
+<li>Edo Liberty - CEO</li>
+<li>Amir Sadoughi - Head of Engineering</li>
+<li>Lior Ehrenfeld - COO</li>
+<li>Greg Kogan - VP Marketing</li>
+</ul></li>
+<li>Funding
+<ul>
+<li><a href="https://www.crunchbase.com/organization/pinecone/company_financials">Crunchbase - Pinecone</a>
+<ul>
+<li>$10m - 2021-01-27</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<!-- ****** -->
+<h2>Alteryx Featuretools</h2>
+<ul>
+<li><a href="https://www.featurelabs.com/open/">Feature Labs</a></li>
+<li><a href="https://www.alteryx.com/innovation-labs" data-card-appearance="inline">https://www.alteryx.com/innovation-labs</a> </li>
+<li>github
+<ul>
+<li><a href="https://github.com/alteryx/featuretools" data-card-appearance="inline">https://github.com/alteryx/featuretools</a> - python library for automated feature engineering</li>
+<li><a href="https://github.com/Featuretools/Automated-Manual-Comparison" data-card-appearance="inline">https://github.com/Featuretools/Automated-Manual-Comparison</a> </li>
+</ul></li>
+<li><a href="https://community.alteryx.com/t5/Analytics/Innovating-in-Data-Science-and-Machine-Learning-Modeling-Better/ba-p/472421" data-card-appearance="inline">https://community.alteryx.com/t5/Analytics/Innovating-in-Data-Science-and-Machine-Learning-Modeling-Better/ba-p/472421</a> - blog - 2019-10-04
+<ul>
+<li>welcome the Feature Labs team to the Alteryx team </li>
+</ul></li>
+<li><a href="https://www.crunchbase.com/organization/feature-labs/people">Feature Labs - Crunchbase</a> 
+<ul>
+<li>Born out of MIT’s Computer Science and AI Lab</li>
+<li>Team
+<ul>
+<li><a href="https://www.linkedin.com/in/jmaxkanter/">Max Kanter</a>: CEO</li>
+<li><a href="https://community.alteryx.com/t5/user/viewprofilepage/user-id/83624">Alan Jacobson</a>: Chief Data and Analytics Officer</li>
+</ul></li>
+</ul></li>
+<li>Articles
+<ul>
+<li><a href="https://www.zdnet.com/article/alteryx-buys-feature-labs-to-automate-ml-feature-engineering/" data-card-appearance="inline">https://www.zdnet.com/article/alteryx-buys-feature-labs-to-automate-ml-feature-engineering/</a> - 2019-10-04</li>
+</ul></li>
+</ul>
+
+<!-- ****** -->
+<h2>Feast</h2>
+<ul>
+
+<li><a href="https://feast.dev/">https://feast.dev</a></li>
+<li><a href="https://github.com/feast-dev/feast">https://github.com/feast-dev/feast</a> - local install: docker containers</li>
+<li><a href="https://docs.feast.dev">https://docs.feast.dev</a> 
+<ul>
+<li><a href="https://docs.feast.dev/community">Community</a> - <a href="https://docs.feast.dev/concepts/glossary">Glossary</a>  </li>
+</ul></li>
+<li><a href="https://www.kubeflow.org/docs/components/feature-store/overview/">Introduction to Feast</a> - kubeflow - This Kubeflow component has alpha status with limited support
+<ul>
+<li><a href="https://databricks.atlassian.net/wiki/spaces/~andre.mesarovic/pages/1670545666/Feature+Store+Resources">Getting started with Feast</a></li>
+</ul></li>
+<li>Key Founding Articles
+<ul>
+<li><a href="https://cloud.google.com/blog/products/ai-machine-learning/introducing-feast-an-open-source-feature-store-for-machine-learning">Introducing Feast: an open source feature store for machine learning</a> - cloud.google - 2020-01-18</li>
+<li><a href="https://blog.gojekengineering.com/feast-bridging-ml-models-and-data-efd06b7d1644">Feast: Bridging ML Models and Data</a> - gojek eng - 2020-02-10</li>
+</ul></li>
+<li>Blog
+<ul>
+<li><a href="https://blog.feast.dev/">https://blog.feast.dev</a></li>
+<li><a href="https://blog.feast.dev/post/feast-joins-the-linux-foundation-for-ai-data">Feast Joins The Linux Foundation for AI &amp; Data</a> - 2020-11-10</li>
+<li><a href="https://blog.feast.dev/post/what-is-a-feature-store">What is a Feature Store?</a> - Pienaar and Del Balso - 2020-11-06</li>
+<li><a href="https://blog.feast.dev/post/a-state-of-feast">A State of Feast</a> - Pienaar - 2020-10-28</li>
+</ul></li>
+<li>Spark Summit
+<ul>
+<li><a href="https://databricks.com/speaker/willem-pienaar">https://databricks.com/speaker/willem-pienaar</a></li>
+<li><a href="https://databricks.com/session_na20/scaling-data-and-ml-with-apache-spark-and-feast">Scaling Data and ML with Apache Spark and Feast</a> - <a href="https://www.slideshare.net/databricks/scaling-data-and-ml-with-apache-spark-and-feast">slides</a> - Pienaar - Spark Summit 2020</li>
+<li><a href="https://databricks.com/session/scaling-ride-hailing-with-machine-learning-on-mlflow">Scaling Ride-Hailing with Machine Learning on MLflow</a> - <a href="https://www.slideshare.net/databricks/scaling-ridehailing-with-machine-learning-on-mlflow">slides</a> - gojek - Spark Summit 2019</li>
+</ul></li>
+<li>Articles
+<ul>
+<li><a href="https://getindata.com/blog/machine-learning-features-discovery-feast-amundsen">Machine Learning Features discovery with Feast and Amundsen</a> - getindata - 2020-12-20</li>
+</ul></li>
+</ul>
+
+<!-- ****** -->
+<h2>Databricks Feature Store</h2>
+<ul>
+<li>Databricks Feature Store 
+ -  <a href="http://docs.databricks.com.s3-website-us-west-1.amazonaws.com/applications/machine-learning/feature-store/index.html">AWS</a>
+ -  <a href="https://docs.microsoft.com/en-us/azure/databricks/applications/machine-learning/feature-store/">Azure</a> - Databricks docs
+<li><a href="https://databricks.com/blog/2021/05/27/databricks-announces-the-first-feature-store-integrated-with-delta-lake-and-mlflow.html">Databricks Announces the First Feature Store Co-designed with a Data and MLOps Platform</a> - blog - 2021-05-27
+<li><a href="https://databricks.com/dataaisummit/north-america-2021/sessions">Solving the Feature Store Problem</a> - video - 56:20 - DAIS 2021 - Clemens ML PM
+
+</ul>
+
+<!-- ****** -->
+<h2>Zipline</h2>
+<ul>
+<li>Airbnb’s Feature Store<a href="https://www.thestrangeloop.com/2019/zipline---a-declarative-feature-engineering-library.html"> </a></li>
+<li>Presentations
+<ul>
+<li>Zipline – A Declarative Feature Engineering Framework -  Simha - <a href="https://databricks.com/session_na20/zipline-a-declarative-feature-engineering-framework">video 42:05</a> - <a href="https://www.slideshare.net/databricks/zipline-a-declarative-feature-engineering-framework">slides</a> - SAIS 2020</li>
+<li><a href="https://databricks.com/session_eu19/zipline-airbnbs-declarative-feature-engineering-framework">Zipline—Airbnb’s Declarative Feature Engineering Framework</a> - Zanoyan/Shapiro - video/slides - SAIS 2019 EU</li>
+<li><a href="https://www.thestrangeloop.com/2019/zipline---a-declarative-feature-engineering-library.html">A Declarative Feature Engineering Library</a>- strangeloop - Simha - video - 2019-09-13</li>
+</ul></li>
+<li><a href="https://oneraynyday.github.io/cs/2020/09/22/Feature-Store/">What is a Feature-Store</a> - oneraynyday - 2020-09-22
+<ul>
+<li>Extensive technical details about Zipline from Airbnb engineer - <img class="emoticon emoticon-thumbs-up" data-emoticon-name="thumbs-up" border="0" src="/wiki/s/1424090559/6452/1d42060145dca756337b5e84769d7b9c1e7d67d5/_/images/icons/emoticons/thumbs_up.png" width="16" height="16" data-mce-src="/wiki/s/1424090559/6452/1d42060145dca756337b5e84769d7b9c1e7d67d5/_/images/icons/emoticons/thumbs_up.png" alt="(thumbs up)" title="(thumbs up)" /> </li>
+</ul></li>
+<li><a href="https://medium.com/airbnb-engineering/using-machine-learning-to-predict-value-of-homes-on-airbnb-9272d3d4739d">Using Machine Learning to Predict Value of Homes On Airbnb</a> - medium - 2017-07-17</li>
+</ul>
+
+<!-- ****** -->
+<h2>Featurestore.org</h2>
+<ul>
+<li><a href="https://www.featurestore.org/">https://www.featurestore.org</a> - Feature Store for ML</li>
+<li><a href="https://docs.featurestore.org/">https://docs.featurestore.org</a></li>
+<li><a href="https://medium.com/data-for-ai">https://medium.com/data-for-ai</a> - Feature Stores for Machine Learning - blog
+<ul>
+<li><a href="https://medium.com/data-for-ai/feature-store-vs-data-warehouse-306d1567c100">Feature Store vs Data Warehouse</a> - 2020-10-09</li>
+<li><a href="https://medium.com/data-for-ai/data-lake-vs-feature-store-dbeaa4b1a081">Data Lake vs Feature Store</a> - 2020-08-21</li>
+<li><a href="https://medium.com/data-for-ai/the-importance-of-having-a-feature-store-c91419b08dcf">The Importance of Having a Feature Store</a> - 2020-08-27</li>
+<li><a href="https://medium.com/data-for-ai/building-a-feature-store-4a2dffee17fe">Building a Feature Store</a> - 2020-08-26</li>
+</ul></li>
+</ul>
+
+<!-- ****** -->
+<h2>Splice Machine</h2>
+<ul>
+<li><a href="https://www.theregister.com/2021/08/26/splice_machine_insolvency/" data-card-appearance="inline">https://www.theregister.com/2021/08/26/splice_machine_insolvency/</a> - 2021-08-26</li>
+<li>TLDR: Mentions of feature store but there are no details on their website.  Apparently their ML Manager has a feature store which is not described anywhere.</li>
+<li><a href="https://splicemachine.com/product/machine-learning-platform/">ML Manager</a> - based on MLflow - <a href="https://youtu.be/s7MgayjkJGg">video</a>.
+<ul>
+<li>Combine online and offline storage under a single, SQL HTAP (Hybrid transactional/analytical processing) database.</li>
+</ul></li>
+<li>Webinars
+<ul>
+<li><a href="https://info.splicemachine.com/simplifying-the-feature-store.html">Simplifying the Feature Store</a></li>
+<li><a href="https://info.splicemachine.com/machine-learning-feature-store-webinar.html">Unleash ML Productivity with a Feature Store</a>- demo of the Splice Machine ML Manager and understand how it can be used as a feature store - 2020-06-30</li>
+</ul></li>
+<li>Meetup: <a href="https://www.meetup.com/Feature-Stores-for-ML-Global-Meetup-Group/events/275319539/">Feature Store Meetup #2 with Uber &amp; Splice Machine</a> - 2021-01-14</li>
+<li>Articles
+<ul>
+<li><a href="https://www.infoq.com/articles/optimizing-mlops-enterprise-ai">How Optimizing MLOps Can Revolutionize Enterprise AI</a> - Feature Stores - CEO Zweben - InfoQ - 2021-03-06</li>
+<li><a href="https://insidebigdata.com/2020/12/29/how-feature-stores-will-revolutionize-enterprise-ai/">How Feature Stores will revolutionize Enterprise AI</a> - CEO Zweben - insidebigdata - 2020-12-29</li>
+</ul></li>
+</ul>
+
+<!-- ****** -->
+<h2>Articles</h2>
+<ul>
+<li><a href="https://mlops.community/learn/feature-store/" data-card-appearance="inline">https://mlops.community/learn/feature-store/</a> - mlops.community</li>
+<li><a href="https://medium.com/riselab/feature-stores-the-data-side-of-ml-pipelines-7083d69bff1c">Feature Stores: The Data Side of ML Pipelines</a> - RISELab blog - 2021-04-06</li>
+<li><a href="https://www.kdnuggets.com/2021/04/automated-feature-selection-risks.html">Why Automated Feature Selection Has Its Risks</a> - kdnuggets - 2021-04</li>
+<li><a href="https://venturebeat.com/2021/01/15/feature-store-repositories-emerge-as-an-mlops-linchpin-for-advancing-ai/">Feature store repositories emerge as an MLOps linchpin for advancing AI</a> - venturebeat - 2021-01-15</li>
+<li><a href="https://towardsdatascience.com/what-are-feature-stores-and-why-are-they-critical-for-scaling-data-science-3f9156f7ab4">What are Feature Stores and Why Are They Critical for Scaling Data Science?</a> - towardsdatascience - 2020-04-07</li>
+<li><a href="https://medium.com/data-for-ai/what-is-a-feature-store-for-ml-29b62580af5d">What is a Feature Store?</a> - medium - 2020-03-19</li>
+<li><a href="https://towardsdatascience.com/feature-selection-techniques-in-python-predicting-hotel-cancellations-48a77521ee4f">Feature Selection Techniques in Python: Predicting Hotel Cancellations</a> - grogan - 2020-02-03</li>
+<li>Notes
+<ul>
+<li><a href="https://eugeneyan.com/writing/notes-from-sparkai-summit-application-specific/">My Notes From Spark+AI Summit 2020</a>- eugeneyan</li>
+<li><a href="http://www.gabormelli.com/RKB/Machine_Learning_(ML)_Feature_Store">Machine Learning (ML) Feature Store</a> - gabormelli</li>
+</ul></li>
+<li><a href="https://feature-forge.readthedocs.io/en/latest/index.html">Feature Forge</a></li>
+<li><a href="https://heartbeat.fritz.ai/hands-on-with-feature-engineering-techniques-broad-introduction-def389c1fc25">https://heartbeat.fritz.ai/hands-on-with-feature-engineering-techniques-broad-introduction-def389c1fc25</a> - 2020-02-20</li>
+</ul>
+
+<!-- ****** -->
+<h2>Misc</h2>
+<ul>
+<li><a href="https://www.meetup.com/Feature-Stores-for-ML-Global-Meetup-Group/events/past/">Feature Stores for ML Global Meetup Group</a></li>
+<li><a href="https://github.com/nikolaydubina/go-featureprocessing">https://github.com/nikolaydubina/go-featureprocessing</a> - Fast, simple sklearn-like feature processing for Go</li>
+<li><a href="https://mlsys.org/Conferences/doc/2018/141.pdf">Buzzsaw: A System for High Speed Feature Engineering</a> - Rust-based - PDF</li>
+</ul>
+    </body>
+</html>
