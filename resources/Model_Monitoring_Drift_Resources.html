@@ -1,0 +1,631 @@
+<html>
+<head>
+  <title>Model Monitoring Drift Resources</title>
+</head>
+<style type="text/css">
+body {font-family:Trebuchet MS ; }
+</style>
+
+<body >
+
+<!-- ******** -->
+<h1>Overview</h1>
+<ul>
+
+<li>Curated links on model monitoring, model performance, model drift and A/B testing.
+
+<li>Quotes:
+<ul>
+<li>“Ensuring high model performance in live deployments is arguably the most important aspect of monitoring machine learning systems” - <a href="https://2cspk01jdpxm1gcorply2y5s-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/2007.06299.pdf">2020-07-13</a></li>
+<li>“The lifecycle of a machine learning model only begins once it’s in production” - <a href="https://towardsdatascience.com/production-machine-learning-monitoring-outliers-drift-explainers-statistical-performance-d9b1d02ac158">Saucedo</a> - 2020-12-13</li></ul>
+</ul>
+
+<!-- ******** -->
+<h1>Databricks</h1>
+
+<strong>Databricks blogs</strong>
+<ul>
+<li><a href="https://databricks.com/blog/2019/09/18/productionizing-machine-learning-from-deployment-to-drift-detection.html">Productionizing Machine Learning: From Deployment to Drift Detection</a> - blog - 2019-09-18
+<ul>
+
+<li><a href="https://databricks.com/wp-content/uploads/2019/09/8-1-2019-Productionizing-ML_-From-Deployment-to-Drift-Detection-Webinar.pdf">Webinar slides</a> as PDF</li>
+
+<li><a href="https://github.com/joelcthomas/modeldrift">https://github.com/joelcthomas/modeldrift</a> - code</li></ul></li></ul><strong>SAIS/DAIS</strong>
+
+<ul>
+
+<li><a href="https://databricks.com/session_na21/drifting-away-testing-ml-models-in-production">Drifting Away: Testing ML Models in Production</a> - <a href="https://www.slideshare.net/databricks/drifting-away-testing-ml-models-in-production">slides</a> - Chengyin, Niall - DAIS 2021
+
+<ul>
+
+<li><a href="https://github.com/chengyin38/dais_2021_drifting_away" data-card-appearance="inline">https://github.com/chengyin38/dais_2021_drifting_away</a> </li>
+</ul>
+
+
+<li><a href="https://databricks.com/session_na21/kfserving-model-monitoring-with-apache-spark-and-a-feature-store">KFServing, Model Monitoring with Apache Spark and a Feature Store</a> - Dowling, Javier - DAIS 2021</li>
+
+<li><a href="https://databricks.com/session_na20/how-intuit-uses-apache-spark-to-monitor-in-production-machine-learning-models-at-large-scale">How Intuit uses Spark to Monitor In-Production Machine Learning Models at Large-Scale</a> - SAIS 2020</li>
+
+<li>How Not to Let Your Model and Data Drift Away Silently - Chengyin - MLOps 2021
+
+<ul>
+
+
+<li><a href="https://github.com/chengyin38/mlops_2021_drifting_away" data-card-appearance="inline">https://github.com/chengyin38/mlops_2021_drifting_away</a> </li></ul></li></ul>
+
+<strong>Articles</strong>
+<ul>
+<li><a href="https://devblogs.microsoft.com/cse/2020/10/29/building-a-clinical-data-drift-monitoring-system-with-azure-devops-azure-databricks-and-mlflow/">Building a clinical data drift monitoring system with Azure DevOps, Azure Databricks, and MLflow</a> - devblogs.microsoft - 2020-10-2</li>
+</ul>
+
+
+<!-- ******** -->
+<h1>MLflow and Model Monitoring</h1>
+<ul>
+<li><a href="https://stackoverflow.com/questions/65937786/data-and-model-drift-monitoring-with-mlflow" data-card-appearance="inline">https://stackoverflow.com/questions/65937786/data-and-model-drift-monitoring-with-mlflow</a> - Stack Overflow - 2021-01-28
+</ul>
+
+<!-- ******** -->
+<h1>Vendor Products</h1>
+
+<h2>Azure ML</h2>
+<ul>
+
+<li>Data drift detection for datasets is currently in public preview - 2020-06-25</li>
+
+<li><a href="https://docs.microsoft.com/en-us/azure/machine-learning/concept-model-management-and-deployment">MLOps: Model management, deployment, and monitoring with Azure Machine Learning</a> - 2020-03-17</li>
+
+<li><a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-enable-data-collection">Collect data for models in production </a> - 2019-11-12</li>
+
+<li><a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets">Detect data drift (preview) on datasets</a> - 2020-06-25</li>
+
+<li><a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-data-drift">Detect data drift (preview) on models deployed to AKS</a> - 2019-11-04</li>
+
+<li><a href="https://azure.github.io/learnAnalytics-UsingAzureMachineLearningforAIWorkloads/lab09-collect_and_analyze_data_from_a_scoring_service/0_README.html">Using Azure Machine Learning - Collect data from a scoring service</a> - Microsoft lab</li>
+
+<li><a href="https://pypi.org/project/azureml-monitoring/">https://pypi.org/project/azureml-monitoring</a> -  Azure Machine Learning Data Collection API for Python</li>
+
+<li><a href="https://docs.microsoft.com/en-us/python/api/azureml-datadrift/azureml.datadrift?view=azure-ml-py" data-card-appearance="inline">https://docs.microsoft.com/en-us/python/api/azureml-datadrift/azureml.datadrift?view=azure-ml-py</a> 
+
+<ul>
+
+<li><a href="https://docs.microsoft.com/en-us/python/api/azureml-datadrift/azureml.datadrift.datadriftdetector(class)?view=azure-ml-py" data-card-appearance="inline">https://docs.microsoft.com/en-us/python/api/azureml-datadrift/azureml.datadrift.datadriftdetector(class)?view=azure-ml-py</a> </li></ul></li></ul>
+
+<h2>AWS Sagemaker</h2>
+
+<h3>SageMaker Model Monitor </h3>
+
+<ul>
+
+<li><a href="https://aws.amazon.com/blogs/aws/amazon-sagemaker-model-monitor-fully-managed-automatic-monitoring-for-your-machine-learning-models/">Amazon SageMaker Model Monitor – Fully Managed Automatic Monitoring For Your Machine Learning Models</a> - blog - 2019-12-03</li>
+
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2019/12/introducing-amazon-sagemaker-model-monitor/">Introducing Amazon SageMaker Model Monitor – Maintain quality of ML models</a> - 2019-12-03</li>
+
+<li><a href="https://sagemaker.readthedocs.io/en/stable/amazon_sagemaker_model_monitoring.html">Amazon SageMaker Model Monitor</a> - sagemaker.readthedocs</li>
+
+<li><a href="https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html">Amazon SageMaker Model Monitor</a> - doc</li>
+
+<li><a href="https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-model-monitor.html">Monitoring a Model in Production</a> - doc</li>
+
+<li><a href="https://d1.awsstatic.com/events/reinvent/2019/NEW_LAUNCH_REPEAT_1_Build,_train_&amp;_debug,_and_deploy_&amp;_monitor_with_Amazon_SageMaker_AIM362-R1.pdf">Build, train &amp; debug, and deploy &amp; monitor with Amazon SageMaker</a> - reinvent slides - 2019</li>
+
+<li><a href="https://github.com/awslabs/amazon-sagemaker-examples/blob/master/sagemaker_model_monitor/visualization/SageMaker-Model-Monitor-Visualize.ipynb">https://github.com/awslabs/amazon-sagemaker-examples/blob/master/sagemaker_model_monitor/visualization/SageMaker-Model-Monitor-Visualize.ipynb</a></li>
+
+<li>Blog
+
+<ul>
+
+<li><a href="https://aws.amazon.com/blogs/machine-learning/bring-your-own-container-to-project-model-accuracy-drift-with-amazon-sagemaker-model-monitor/">Bring your own container to project model accuracy drift with Amazon SageMaker Model Monitor</a> - 2021-07-26</li></ul></li></ul><h3>Clarify</h3>
+
+<ul>
+
+<li><a href="https://aws.amazon.com/sagemaker/clarify/">https://aws.amazon.com/sagemaker/clarify</a>
+
+<ul>
+
+<li>Identify and limit bias and explain predictions</li>
+
+<li>Clarify detects potential bias during data preparation, after model training, and in your deployed model by examining attributes you specify</li>
+
+<li>Detect bias in your data and model
+
+<ul>
+
+<li>Identify imbalances in data - integrated with <a href="https://aws.amazon.com/sagemaker/data-wrangler/">Data Wrangler</a> (feature engineering)</li>
+
+<li>Check your trained model for bias</li>
+
+<li>Monitor your model for bias</li></ul></li>
+
+<li>Explain model behavior
+
+<ul>
+
+<li>Understand your model</li>
+
+<li>Monitor your model for changes in behavior</li>
+
+<li>Explain individual model predictions</li></ul></li>
+
+<li>Use cases
+
+<ul>
+
+<li>Regulatory Compliance</li>
+
+<li>Internal Reporting &amp; Compliance</li>
+
+<li>Customer Service</li></ul></li></ul></li>
+
+<li><a href="https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html" data-card-appearance="inline">https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-fairness-and-explainability.html</a> 
+
+<ul>
+
+<li>Helps explain how these models make predictions using a feature attribution approach. </li>
+
+<li>Monitors inferences models make in production for bias or feature attribution drift. </li></ul></li>
+
+<li><a href="https://sagemaker-examples.readthedocs.io/en/latest/sagemaker_processing/fairness_and_explainability/fairness_and_explainability.html" data-card-appearance="inline">https://sagemaker-examples.readthedocs.io/en/latest/sagemaker_processing/fairness_and_explainability/fairness_and_explainability.html</a> </li>
+
+<li><a href="https://www.amazon.science/latest-news/how-clarify-helps-machine-learning-developers-detect-unintended-bias">How Clarify helps machine learning developers detect unintended bias</a> - 2020-12-09</li>
+
+<li><a href="https://github.com/aws/amazon-sagemaker-clarify">https://github.com/aws/amazon-sagemaker-clarify</a> </li>
+
+<li>Articles
+
+<ul>
+
+<li><a href="https://techcrunch.com/2020/12/08/aws-announces-sagemaker-clarify-to-help-reduce-bias-in-machine-learning-models/" data-card-appearance="inline">https://techcrunch.com/2020/12/08/aws-announces-sagemaker-clarify-to-help-reduce-bias-in-machine-learning-models/</a> - 2020-12-08</li>
+
+<li><a href="https://julsimon.medium.com/introducing-amazon-sagemaker-clarify-aws-re-invent-2020-6a309d159f16">Introducing Amazon SageMaker Clarify — AWS re:Invent 2020</a> - julsimon - 2020-12-08</li></ul></li></ul>
+
+<h2>GCP </h2>
+
+<strong>GCP Vertex AI</strong>
+
+<ul>
+
+<li><a href="https://cloud.google.com/vertex-ai/docs/model-monitoring/overview">Introduction to Vertex Model Monitoring </a>- Pre-GA Offerings Terms </li>
+
+<li><a href="https://cloud.google.com/vertex-ai/docs/model-monitoring/using-model-monitoring">Monitoring feature skew and drift</a> </li></ul><strong>GCP AI Platform</strong>
+
+<ul>
+
+<li><a href="https://cloud.google.com/ai-platform/prediction/docs/monitor-prediction">Monitoring model versions</a></li>
+
+<li><a href="https://cloud.google.com/ai-platform/prediction/docs/online-predict#requesting_logs_for_online_prediction_requests">Requesting logs for online prediction requests</a></li></ul><strong>Blogs</strong>
+
+<ul>
+
+<li><a href="https://cloud.google.com/blog/topics/developers-practitioners/event-triggered-detection-data-drift-ml-workflows">Event-triggered detection of data drift in ML workflows</a> - Pre-GA Offerings Terms - 2021-03-15</li>
+
+<li><a href="https://cloud.google.com/blog/topics/developers-practitioners/continuous-model-evaluation-bigquery-ml-stored-procedures-and-cloud-scheduler">Continuous model evaluation with BigQuery ML, Stored Procedures, and Cloud Scheduler </a>- 2021-02-03
+
+<ul>
+
+<li>Continuous evaluation—the process of ensuring a production machine learning model is still performing well on new data—is an essential part in any ML workflow. </li>
+
+<li>Performing continuous evaluation can help you catch model drift, a phenomenon that occurs when the data used to train your model no longer reflects the current environment.</li></ul></li></ul><strong>Articles</strong>
+
+<ul>
+
+<li><a href="https://dataintegration.info/monitor-models-for-training-serving-skew-with-vertex-ai" data-card-appearance="inline">https://dataintegration.info/monitor-models-for-training-serving-skew-with-vertex-ai</a> - dataintegration - 2021-07-30</li>
+
+<li><a href="https://fuzzylabs.ai/blog/vertex-ai-the-hype/" data-card-appearance="inline">https://fuzzylabs.ai/blog/vertex-ai-the-hype/</a> - fuzzylabs.ai - 2021-06-30</li></ul>
+
+<h2>Seldon</h2>
+
+Seldon doc
+
+<ul>
+
+<li><a href="https://docs.seldon.io/projects/seldon-core/en/v1.1.0/analytics/drift_detection.html"><u>Drift Detection in Seldon Core</u></a>
+
+<ul>
+
+<li><a href="https://docs.seldon.io/projects/seldon-core/en/v1.6.0/charts/seldon-abtest.html" data-card-appearance="inline">https://docs.seldon.io/projects/seldon-core/en/v1.6.0/charts/seldon-abtest.html</a> </li>
+
+<li><a href="https://docs.seldon.io/projects/seldon-core/en/v1.1.0/examples/mlflow_server_ab_test_ambassador.html" data-card-appearance="inline">https://docs.seldon.io/projects/seldon-core/en/v1.1.0/examples/mlflow_server_ab_test_ambassador.html</a> </li>
+
+<li><a href="https://www.iteblog.com/ppt/dataai-summit-europe-2020/seamless-mlops-with-seldon-and-mlflow-iteblog.com.pdf">Seamless MLOps with Seldon and MLflow</a> - A/B testing, etc. - PDF</li></ul></li></ul>Seldon blog
+
+<ul>
+
+<li><a href="https://www.seldon.io/infoworld-5-ai-startups-leading-mlops/">Drift Detection: An Introduction</a> - 2021-07-14
+
+<ul>
+
+<li><a href="https://www.seldon.io/research/monitoring-and-explainability-of-models-in-production/">Monitoring and explainability of models in production</a> - video - 2020-07-13</li></ul></li></ul>Papers and articles
+
+<ul>
+
+<li><a href="https://2cspk01jdpxm1gcorply2y5s-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/2007.06299.pdf">Monitoring and explainability of models in production</a> -  seminal PDF - 2020-07-13 - <img class="emoticon emoticon-thumbs-up" data-emoticon-name="thumbs-up" border="0" src="/wiki/s/1424090559/6452/1d42060145dca756337b5e84769d7b9c1e7d67d5/_/images/icons/emoticons/thumbs_up.png" width="16" height="16" data-mce-src="/wiki/s/1424090559/6452/1d42060145dca756337b5e84769d7b9c1e7d67d5/_/images/icons/emoticons/thumbs_up.png" alt="(thumbs up)" title="(thumbs up)" /> 
+
+<ul>
+
+<li><a href="https://towardsdatascience.com/production-machine-learning-monitoring-outliers-drift-explainers-statistical-performance-d9b1d02ac158">Production Machine Learning Monitoring: Outliers, Drift, Explainers &amp; Statistical Performance</a> - Saucedo - <a href="https://www.meetup.com/SF-Big-Analytics/events/275779757/">meetup</a> - 2020-12-13 -  <img class="emoticon emoticon-thumbs-up" data-emoticon-name="thumbs-up" border="0" src="/wiki/s/1424090559/6452/1d42060145dca756337b5e84769d7b9c1e7d67d5/_/images/icons/emoticons/thumbs_up.png" width="16" height="16" data-mce-src="/wiki/s/1424090559/6452/1d42060145dca756337b5e84769d7b9c1e7d67d5/_/images/icons/emoticons/thumbs_up.png" alt="(thumbs up)" title="(thumbs up)" /> </li></ul></li></ul>MLflow
+
+<ul>
+
+<li><a href="https://databricks.atlassian.net/wiki/spaces/~andre.mesarovic/pages/2045216594/Model+Serving+Resources#Seldon" data-card-appearance="inline">https://databricks.atlassian.net/wiki/spaces/~andre.mesarovic/pages/2045216594/Model+Serving+Resources#Seldon</a> - Company basic</li>
+
+<li><a href="https://databricks.atlassian.net/wiki/spaces/UN/pages/1362691478/MLflow+Integrations#Seldon.ai">MLflow Integrations</a> - MLflow Integrations Wiki page</li></ul><h3>Alibi Detect</h3><strong>Alibi Detect</strong>
+
+<ul>
+
+<li><a href="https://github.com/SeldonIO/alibi-detect">github.com/SeldonIO/alibi-detect</a> - Algorithms for outlier, adversarial and drift detection
+
+<ul>
+
+<li><a href="https://github.com/SeldonIO/alibi-detect/tree/master/examples">Jupyter examples</a> </li></ul></li>
+
+<li><a href="https://docs.seldon.io/projects/alibi-detect/en/stable/">Alibi Detect</a> - docs.seldon.io
+
+<ul>
+
+<li><a href="https://docs.seldon.io/projects/seldon-core/en/v1.8.0/examples/outlier_combiner.html">Seldon deployment of Alibi Outlier detector</a> </li></ul></li>
+
+<li><a href="https://hub.docker.com/r/seldonio/alibi-detect-server/tags?page=1&amp;ordering=last_updated"> seldonio/alibi-detect-server</a> - Docker hub</li>
+
+<li>Articles
+
+<ul>
+
+<li><a href="https://towardsdatascience.com/simplifing-image-outlier-detection-with-alibi-detect-6aea686bf7ba">Simplifying Image Outlier Detection with Alibi Detect</a> - Tolios - 2020-10-13</li></ul></li></ul><strong>Articles</strong>
+
+<ul>
+
+<li><a href="https://towardsdatascience.com/simplifing-image-outlier-detection-with-alibi-detect-6aea686bf7ba">https://towardsdatascience.com/simplifing-image-outlier-detection-with-alibi-detect-6aea686bf7ba</a> - Tollos - 2020-10-13</li></ul>
+
+<h2>KFserving</h2>
+
+
+
+<ul>
+
+<li><a href="https://databricks.com/session_na21/kfserving-model-monitoring-with-apache-spark-and-a-feature-store">KFServing, Model Monitoring with Apache Spark and a Feature Store</a> - Dowling - DAIS 2021</li>
+
+<li><a href="https://github.com/kubeflow/kfserving/issues/335" data-card-appearance="inline">https://github.com/kubeflow/kfserving/issues/335</a> </li>
+
+<li>See: <a href="https://databricks.atlassian.net/wiki/spaces/~andre.mesarovic/pages/2045216594/Model+Serving+Resources#KFServing" data-card-appearance="inline">https://databricks.atlassian.net/wiki/spaces/~andre.mesarovic/pages/2045216594/Model+Serving+Resources#KFServing</a> </li></ul>
+
+<h2>Data Robot</h2>
+
+
+
+<ul>
+
+<li>Blogs
+
+<ul>
+
+<li><a href="https://www.datarobot.com/blog/all-data-drift-is-not-created-equal-dot-dot-dot/">All Data Drift is Not Created Equal</a>  - 2020-02-20</li>
+
+<li><a href="https://www.datarobot.com/blog/introducing-mlops-champion-challenger-models/">Introducing MLOps Champion/Challenger Models</a> - n.d.</li></ul></li></ul>
+
+<h2>Algorithmia</h2>
+
+
+
+<ul>
+
+<li><a href="https://www.datanami.com/2020/11/05/algorithmia-datadog-team-on-mlops/">Algorithmia, Datadog Team on MLOps</a> - Datanami 2020-11-05</li></ul>
+
+<h2>ModelOp</h2>
+
+
+
+<ul>
+
+<li>Product
+
+<ul>
+
+<li><a href="https://www.modelop.com/monitoring/">Automated and Actionable Model Monitoring</a> 
+
+<ul>
+
+<li>Monitor all aspects of a model – operations, quality, risk and processes</li>
+
+<li>Detect metrics and outcomes that exceed thresholds and controls</li>
+
+<li>Identify incomplete steps and tasks in the model operations process</li>
+
+<li>Initiate and track remediation steps until the problem is resolved</li>
+
+<li>View the state and status of all models</li></ul></li></ul></li>
+
+<li><a href="https://www.modelop.com/blog/">ModelOp blog</a>
+
+<ul>
+
+<li><a href="https://www.modelop.com/blog/how-to-monitor-your-machine-learning-models-2/">How to Monitor Your Machine Learning Models</a> - 2020-11-18</li>
+
+<li><a href="https://www.modelop.com/blog/how-to-ensure-better-model-performance-through-modelops/">How to Ensure Better Model Performance Through ModelOps</a>  - 2020-07-16</li></ul></li>
+
+<li>Funding:
+<ul>
+<li><a href="https://www.crunchbase.com/organization/modelop">Crunchbase - ModelOp</a>
+<ul>
+<li>$6m - Seed - 2020-03-31</li></ul></li></ul></li>
+</ul>
+
+<!-- * * * * * -->
+<h2>Whylabs</h2>
+<ul>
+
+<a href="https://whylabs.ai/">https://whylabs.ai</a>
+<ul>
+
+<li>We take the pain out of model and data monitoring so that you spend less time firefighting, and more time building models.</li>
+
+<li>WhyLabs enables them to operate with certainty by providing model monitoring, preventing costly model failures, and facilitating cross-functional collaboration.</li></ul><a href="https://whylabs.ai/blog">https://whylabs.ai/blog</a>
+
+<ul>
+
+<li><a href="https://whylabs.ai/blog/posts/data-logging-sampling-versus-profiling">Data Logging: Sampling versus Profiling</a> - 2020-10-28</li>
+
+<li><a href="https://whylabs.ai/blog/posts/whylogs-embrace-data-logging">whylogs: Embrace Data Logging Across Your ML Systems</a> - 2020-09-22</li></ul>MLflow Integration
+
+<ul>
+
+<li><a href="https://whylabs.ai/blog/posts/on-model-lifecycle-and-monitoring">Streamlining data monitoring with whylogs and MLflow</a> - 2021-02-08</li>
+
+<li><a href="https://github.com/whylabs/whylogs-examples/blob/mainline/python/MLFlow%20Integration%20Example.ipynb">whylogs-examples/MLFlow Integration Example.ipynb</a> - 2021-02-04</li></ul>Articles
+
+<ul>
+
+<li><a href="https://towardsdatascience.com/sampling-isnt-enough-profile-your-ml-data-instead-6a28fcfb2bd4">Sampling isn’t enough, profile your ML data instead</a> - 2020-09-22</li>
+
+<li><a href="https://medium.com/whylabs/introducing-whylabs-5a3b4f37b998">Introducing WhyLabs, a Leap Forward in AI Reliability</a> - Visnjic - 2020-09-23</li></ul>Funding
+
+<ul>
+
+<li><a href="https://www.crunchbase.com/organization/whylabs">Crunchbase - whylabs</a>
+
+<ul>
+
+<li>$4m - Seed - 2020-09-23</li></ul></li>
+
+<li>Articles
+
+<ul>
+
+<li><a href="https://www.geekwire.com/2020/amazon-vets-raise-4m-madrona-bezos-expeditions-others-ai2-spinout-whylabs/">Amazon vets raise $4M from Madrona, Bezos Expeditions, others for AI2 spinout WhyLabs</a> - geekwire - 2020-09-23</li></ul></li></ul>Team
+
+<ul>
+
+<li>Alessya Visnjic - CEO - <a href="https://www.linkedin.com/in/alessya">LinkedIn</a></li></ul>
+
+</ul>
+
+<!-- * * * * * -->
+<h2>Comet</h2>
+<ul>
+
+Basic
+<ul>
+<li><a href="https://www.comet.ml/">https://www.comet.ml</a></li>
+<li>Comet Model Production Monitoring (MPM) - focuses on models post production. The original product was more around how multiple offline experiments are modeled during training, while MPM is focused on these models once they hit production for the first time</li></ul>Funding
+
+<ul>
+
+<li><a href="https://www.crunchbase.com/organization/comet-ml">Crunchbase - comet.ml</a>
+
+<ul>
+
+<li>pre-seed - Jul 17, 2017</li>
+<li>seed - Apr 5, 2018</li>
+<li>$4.5m - venture round - Apr 22, 2020 </li>
+<li>$13m. - Round A - Apr 21, 2021</li></ul></li>
+
+<li>Articles
+
+<ul>
+
+<li><a href="https://venturebeat.com/2021/04/08/mlops-startup-comet-raises-13m-to-launch-model-monitoring-products/">MLOps startup Comet raises $13M to launch model monitoring products</a> - venturebeat - 2021-04-08</li>
+
+<li><a href="https://techcrunch.com/2021/04/08/comet-announces-13m-series-a-for-ml-model-building-tool/?guccounter=1&amp;guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=AQAAAH5v0-ufJ8VlwS3As-1tsA3RKd9S5_6SMN_7r8oL2yIuVSnSXlHiKfw7NDfNMgfZmSCV6Q6ofT8e02nCI5CeLbm_-is2Wdb5wkE_GZn_LTr91zmCsPRHan1RmFIP-S6P-eTDFf7ns408XlX9DFhJhM5Ijk4XN2_X6ct34mVoThNl" data-card-appearance="inline">https://techcrunch.com/2021/04/08/comet-announces-13m-series-a-for-ml-model-building-tool/?guccounter=1&amp;guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=AQAAAH5v0-ufJ8VlwS3As-1tsA3RKd9S5_6SMN_7r8oL2yIuVSnSXlHiKfw7NDfNMgfZmSCV6Q6ofT8e02nCI5CeLbm_-is2Wdb5wkE_GZn_LTr91zmCsPRHan1RmFIP-S6P-eTDFf7ns408XlX9DFhJhM5Ijk4XN2_X6ct34mVoThNl</a> - 2021-04-08</li></ul></li></ul>Team
+
+<ul>
+
+<li>Gideon Mendels - CEO - founder</li>
+
+<li>Nimrod Lahav - COO - founder</li>
+
+</ul>
+</ul>
+
+<!-- * * * * * -->
+
+<h2>Evidently</h2>
+
+
+
+<ul>
+
+<li><a href="https://github.com/evidentlyai/evidently">https://github.com/evidentlyai/evidently</a></li>
+
+<li>Evidently helps analyze machine learning models during development, validation, or production monitoring. The tool generates interactive reports from pandas DataFrame. Currently 6 reports are available.
+
+<ul>
+
+<li>Data Drift - Detects changes in feature distribution.</li>
+
+<li>Numerical Target Drift - Detects changes in numerical target (see example below) and feature behavior.</li>
+
+<li>Categorical Target Drift - Detects changes in categorical target and feature behavior (see example below)</li>
+
+<li>Regression Model Performance - Analyzes the performance of a regression model and model errors (see example below).</li>
+
+<li>Classification Model Performance - Analyzes the performance and errors of a classification model. Works both for binary and multi-class models</li>
+
+<li>Probabilistic Classification Model Performance - Analyzes the performance of a probabilistic classification model, quality of model calibration, and model errors.</li></ul></li>
+
+<li><a href="https://evidentlyai.com/blog/machine-learning-monitoring-data-and-concept-drift" data-card-appearance="inline">https://evidentlyai.com/blog/machine-learning-monitoring-data-and-concept-drift</a> </li>
+
+<li>Blog
+
+<ul>
+
+<li><a href="https://evidentlyai.com/blog/tutorial-3-historical-data-drift" data-card-appearance="inline">https://evidentlyai.com/blog/tutorial-3-historical-data-drift</a> - 2021-07-29
+
+<ul>
+
+<li>example with Evidently, Plotly, Mlflow, and some Python code</li>
+
+<li><a href="https://github.com/evidentlyai/evidently/blob/main/evidently/tutorials/historical_drift_visualization.ipynb">evidently/historical_drift_visualization.ipynb</a> - Example with MLflow</li></ul></li></ul></li></ul>
+
+<h2>TorchDrift</h2>
+
+
+
+<ul>
+
+<li><a href="https://torchdrift.org/">https://torchdrift.org</a> - TorchDrift is a data and concept drift library for PyTorch. It lets you monitor your PyTorch models to see if they operate within spec</li></ul>
+
+<h2>Neptune</h2>
+
+
+
+<ul>
+
+<li><a href="https://neptune.ai/blog/concept-drift-best-practices" data-card-appearance="inline">https://neptune.ai/blog/concept-drift-best-practices</a> - 2021-04-29</li></ul>
+
+<h2>Arthur.ai</h2>
+
+
+
+<ul>
+
+<li><a href="https://www.arthur.ai/">https://www.arthur.ai</a> - <a href="https://www.arthur.ai/our-team">team</a>
+
+<ul>
+
+<li>Advanced monitoring and alerting, no matter where they’re deployed.</li>
+
+<li>Gain valuable insights into how your models are making decisions.</li></ul></li>
+
+<li><a href="https://www.arthur.ai/blog">Blog</a> 
+
+<ul>
+
+<li><a href="https://www.arthur.ai/blog/arthur-releases-the-first-computer-vision-model-monitoring-solution-for-enterprise" data-card-appearance="inline">https://www.arthur.ai/blog/arthur-releases-the-first-computer-vision-model-monitoring-solution-for-enterprise</a> - 2021-06-17</li>
+
+<li><a href="https://www.arthur.ai/blog/serving-hosting-and-monitoring-of-an-xgboost-model-ubiops-and-arthur" data-card-appearance="inline">https://www.arthur.ai/blog/serving-hosting-and-monitoring-of-an-xgboost-model-ubiops-and-arthur</a> - 2021-05-25</li>
+
+<li><a href="https://www.arthur.ai/blog/interactive-analysis-with-petabytes-of-model-data" data-card-appearance="inline">https://www.arthur.ai/blog/interactive-analysis-with-petabytes-of-model-data</a> - 2021-04-06</li>
+
+<li><a href="https://www.arthur.ai/blog/ai-bias-mitigation-101" data-card-appearance="inline">https://www.arthur.ai/blog/ai-bias-mitigation-101</a> - 2021-03-23</li>
+
+<li><a href="https://www.arthur.ai/blog/how-to-build-a-production-ready-model-monitoring-system-for-your-enterprise" data-card-appearance="inline">https://www.arthur.ai/blog/how-to-build-a-production-ready-model-monitoring-system-for-your-enterprise</a> - 2020-06-15</li></ul></li>
+
+<li><a href="https://docs.arthur.ai/">Documentation</a>
+
+<ul>
+
+<li><a href="https://docs.arthur.ai/api-query-guide/data_drift.html">Data Drift</a> </li>
+
+<li><a href="https://docs.arthur.ai/glossary/glossary.html">Concepts and Terminology</a> - <img class="emoticon emoticon-thumbs-up" data-emoticon-name="thumbs-up" border="0" src="/wiki/s/1424090559/6452/1d42060145dca756337b5e84769d7b9c1e7d67d5/_/images/icons/emoticons/thumbs_up.png" width="16" height="16" data-mce-src="/wiki/s/1424090559/6452/1d42060145dca756337b5e84769d7b9c1e7d67d5/_/images/icons/emoticons/thumbs_up.png" alt="(thumbs up)" title="(thumbs up)" /> 
+
+<ul>
+
+<li><a href="https://docs.arthur.ai/glossary/glossary.html#data-drift">Data Drift</a> </li>
+
+<li><a href="https://docs.arthur.ai/glossary/glossary.html#ood-detection">Out of Distribution Detection</a> </li>
+
+<li><a href="https://docs.arthur.ai/glossary/glossary.html#ood-detection">Disparate Treatment</a> </li></ul></li>
+
+<li><a href="https://docs.arthur.ai/api-query-guide/index.html#">API Query Guide</a> </li>
+
+<li><a href="https://docs.arthur.ai/user-guide/index.html">User Guide</a> 
+
+<ul>
+
+<li><a href="https://docs.arthur.ai/user-guide/sparkml-integration.html">SparkML Integration</a> </li></ul></li></ul></li>
+
+<li>Financials
+
+<ul>
+
+<li><a href="https://www.crunchbase.com/organization/arthur-ai" data-card-appearance="inline">https://www.crunchbase.com/organization/arthur-ai</a> - $18.3m<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="05e4e30e-d203-40f5-91ab-d565595f6d74" data-macro-schema-version="1" style="background-image: url(https://databricks.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>+------+--------+----------+
+|amount|   round|      date|
++------+--------+----------+
+| 15.0m|Series A|2020-12-09|
+|  3.3m|    Seed|2019-12-11|
++------+--------+----------+</pre></td></tr></table></li>
+
+<li><a href="https://github.com/art-ai">https://github.com/art-ai</a> </li>
+
+<li>Articles
+
+<ul>
+
+<li><a href="https://techcrunch.com/2020/12/09/arthur-ai-snags-15m-series-a-to-grow-machine-learning-monitoring-tool/" data-card-appearance="inline">https://techcrunch.com/2020/12/09/arthur-ai-snags-15m-series-a-to-grow-machine-learning-monitoring-tool/</a> - 2019-12-09</li>
+
+<li><a href="https://www.alleywatch.com/2020/12/arthur-ai-monitoring-platform-data-science-adam-wenchel/">https://www.alleywatch.com/2020/12/arthur-ai-monitoring-platform-data-science-adam-wenchel/</a> - 2020-12</li></ul></li>
+
+<li>Leaderhip
+
+<ul>
+
+<li>Adam Wenchel - CEO - co-cofounder - <a href="https://www.linkedin.com/in/apwenchel">LinkedIn</a></li>
+
+<li>John Dickerson - Chief scientists - co-cofounder - <a href="https://www.linkedin.com/in/john-dickerson">LinkedIn</a></li></ul></li></ul></li></ul>
+
+<h2>Boxkite</h2>
+<ul>
+<li><a href="https://boxkite.ml">Boxkite</a> - capture feature and inference distributions used in model training, then compares them against realtime production distributions via Prometheus and Grafana.</li>
+<li><a href="https://boxkite.ml/en/latest/tutorials/kubeflow-mlflow/" data-card-appearance="inline">https://boxkite.ml/en/latest/tutorials/kubeflow-mlflow/</a> </li>
+</ul>
+
+<!-- ******** -->
+<h1>Articles</h1>
+
+<ul>
+
+<li><a href="https://www.datanami.com/2020/06/16/staying-on-top-of-ml-model-and-data-drift/">Staying On Top of ML Model and Data Drift</a> - datanami - 2020-07-16</li>
+
+<li><a href="https://www.anodot.com/">anodot</a>
+
+<ul>
+
+<li><a href="https://www.anodot.com/blog/monitoring-machine-learning/">Learning the Learner: The Ultimate Way to Monitor Machine Learning</a></li>
+
+<li><a href="https://github.com/anodot/MLWatcher">https://github.com/anodot/MLWatcher</a> - python agent that records a large variety of time-series metrics of your running ML classification algorithm</li></ul></li>
+
+<li>Hopswork
+
+<ul>
+
+<li><a href="https://github.com/logicalclocks/model-monitoring">https://github.com/logicalclocks/model-monitoring</a> </li></ul></li>
+
+<li><a href="https://christophergs.com/machine%20learning/2020/03/14/how-to-monitor-machine-learning-models">Monitoring Machine Learning Models in Production</a> - <a href="https://christophergs.com/">christophergs.com</a> - 2020-03-14</li>
+
+<li><a href="https://www.imperva.com/blog/deployment-isnt-the-final-step-monitoring-machine-learning-models-in-production/">Deployment Isn’t the Final Step – Monitoring Machine Learning Models in Production</a> - imperva - 2019-11-25</li>
+
+<li><a href="https://medium.com/feedzaitech/ml-powered-automatic-model-monitoring-d1841efa0ba8">ML-Powered Automatic Model Monitoring </a> - medium - 2019-11-20</li>
+
+<li><a href="https://www.kdnuggets.com/2019/01/monitor-machine-learning-real-time.html">How to Monitor Machine Learning Models in Real-Time</a> - Ted Dunning - kdnuggets - 2019-01</li>
+
+<li><a href="https://machinelearningmastery.com/gentle-introduction-concept-drift-machine-learning/" data-card-appearance="inline">https://machinelearningmastery.com/gentle-introduction-concept-drift-machine-learning/</a> - 2017-12-15</li>
+
+<li><a href="https://monitorml.com">https://monitorml.com</a> - Real-Time Production Monitoring for Machine Learning</li>
+
+<li><a href="https://www.modelop.com/wp-content/uploads/2020/01/ModelOp-Center-Monitoring.pdf">ModelOp Center - Monitoring capability</a> - <a href="https://www.modelop.com/">modelop.com</a> - PDF</li></ul>
+
+<!-- ******** -->
+<h1>Other</h1>
+<ul>
+
+<li><a href="https://en.wikipedia.org/wiki/Concept_drift#:~:text=In%20predictive%20analytics%20and%20machine,less%20accurate%20as%20time%20passes." data-card-appearance="inline">https://en.wikipedia.org/wiki/Concept_drift#:~:text=In%20predictive%20analytics%20and%20machine,less%20accurate%20as%20time%20passes.</a> - Wikipedia</li>
+
+<li><a href="https://blog.rstudio.com/2021/04/08/model-monitoring-with-r-markdown/">Model Monitoring with R Markdown, pins, and RStudio Connect</a> - Silge - 2021-04-08</li>
+
+<li><a href="https://github.com/scikit-multiflow/scikit-multiflow">https://github.com/scikit-multiflow/scikit-multiflow</a> - Concept drift detection - amongst other things</li>
+
+<li><a href="https://github.com/amesar/mlflow-model-monitoring">amesar/mlflow-model-monitoring</a> - MLflow model server monitoring and drift simple example (payload logging only)</li>
+</ul> 
+
+</body>
+</html>
